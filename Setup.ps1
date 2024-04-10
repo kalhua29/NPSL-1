@@ -478,7 +478,7 @@ if ( $EnableVMC ){
 else {
     $VMCArgument = ""
 }
-if ( -not ( Test-Path "$SetupDir\BlankVMC.bin" -NewerThan "Feb 4, 2024" ) ) {
+if ( -not ( Test-Path "$SetupDir\BlankVMC.bin" -NewerThan "2024-02-04" ) ) {
     
     $TempSetupZip = "$env:TEMP\NPSLSetup.zip"
 
@@ -489,7 +489,7 @@ if ( -not ( Test-Path "$SetupDir\BlankVMC.bin" -NewerThan "Feb 4, 2024" ) ) {
     Remove-Item $TempSetupZip
 }
 
-if ( -not ( Test-Path $Neutrino -NewerThan "Mar 13, 2024" ) ) {
+if ( -not ( Test-Path $Neutrino -NewerThan "2024-03-13" ) ) {
     
     $TempInstallZip = "$env:TEMP\NPSLInstall.zip"
 
